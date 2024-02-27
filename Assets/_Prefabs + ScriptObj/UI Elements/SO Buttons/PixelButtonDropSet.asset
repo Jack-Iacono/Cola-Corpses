@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c379198e0b9f446a4958b3afabb5d3, type: 3}
+  m_Name: PixelButtonDropSet
+  m_EditorClassIdentifier: 
+  normalSprite: {fileID: 21300000, guid: f64a218977918884c8341f6cfec601c1, type: 3}
+  hoverSprite: {fileID: 21300000, guid: aa451d5efa5c9d24c8bb734caa96b18d, type: 3}
+  pressedSprite: {fileID: 21300000, guid: e9d8e9115f389884cbd9736c3b86f5c2, type: 3}

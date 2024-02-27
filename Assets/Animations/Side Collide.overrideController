@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Side Collide
+  m_Controller: {fileID: 9100000, guid: bc7eae2e171b52347b743cb66f637610, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 758742f27d14f1846abc9a82a18cd74d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 06c4bb3db2e67d746b6aba3e0f98745d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bc7bf6de915839845b2056e5e3d1c603, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7ecbb5366f29af5438e1aaa523d1e337, type: 2}
