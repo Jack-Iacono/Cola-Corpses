@@ -50,7 +50,7 @@ public class ObjectPool : MonoBehaviour
         for (int i = 0; i < objectsToPool.Count; i++)
         {
             GameObject parent = new GameObject(objectsToPool[i].name.Split('(')[0] + " List");
-            parent.transform.parent = this;
+            parent.transform.parent = transform;
 
             if (objectsToPool[i].name == "Basic Zombie" && ValueStoreController.loadData)
             {
