@@ -44,6 +44,12 @@ public class SettingsScreenController : InterfaceScreenController
 
     #endregion
 
+    private void Awake()
+    {
+        // This will run the fullscreen stuff now
+        Screen.fullScreen = fullscreen;
+    }
+
     public override void InitializeScreen()
     {
         PreferenceData prefData = ProfileSaveController.LoadPreferenceData(ValueStoreController.fileOwner);
@@ -120,7 +126,7 @@ public class SettingsScreenController : InterfaceScreenController
         else
             fullScreenButton.SetSpriteSetIndex(0);
 
-        fullscreen = b;
+        Screen.fullScreen = fullscreen;
 
         ValueStoreController.prefData.fullScreen = fullscreen;
         ValueStoreController.SaveProfileData();

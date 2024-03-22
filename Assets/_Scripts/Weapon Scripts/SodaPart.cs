@@ -243,7 +243,8 @@ public class SodaPart
     private Trait GetRandomTrait()
     {
         //Gets a random trait from the range of 1, to the length of the trait list
-        return (Trait)UnityEngine.Random.Range(1, Enum.GetNames(typeof(Trait)).Length);
+        // Excludes the last trait which SHOULD be the null trait
+        return (Trait)UnityEngine.Random.Range(0, Enum.GetNames(typeof(Trait)).Length - 1);
     }
     private Trait GetRandomTrait(Trait[] exclude)
     {
@@ -251,9 +252,9 @@ public class SodaPart
 
         for(int i = 1; i < Enum.GetNames(typeof(Trait)).Length; i++)
         {
-            Trait t = (Trait)Enum.Parse(typeof(Trait), Enum.GetValues(typeof(Trait)).GetValue(0).ToString());
+            Trait t = (Trait)Enum.Parse(typeof(Trait), Enum.GetValues(typeof(Trait)).GetValue(i).ToString());
 
-            if (!exclude.Contains((Trait)Enum.Parse(typeof(Trait), Enum.GetValues(typeof(Trait)).GetValue(i).ToString())))
+            if (!exclude.Contains(t) && t != Trait.None)
             {
                 excludeList.Add((Trait)Enum.Parse(typeof(Trait), Enum.GetValues(typeof(Trait)).GetValue(i).ToString()));
             }
